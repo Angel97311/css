@@ -1,0 +1,12 @@
+:root
+{
+	--azul:green;
+}
+body
+{
+	background-color: var(--azul);
+}
+table
+{
+	position: sticky;/* equivalente a position fixed*/
+}
