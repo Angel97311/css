@@ -1,0 +1,12 @@
+@font-face
+{
+    /*Nombre de fuente*/
+    font-family: 'Dancing-Regular';
+    /*Direccion de Fuente*/
+    src: url(./fonts/DancingScript-Regular.woff2)  format('fontwoff2');
+}
+h1
+{
+    font-family: 'Dancing-Regular';
+    font-weight: 500;
+}

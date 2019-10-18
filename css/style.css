@@ -1,12 +1,189 @@
-:root
-{
-	--azul:green;
+@font-face{
+    font-family: 'Courgette-Regular';
+    src:url(../fonts/Courgette-Regular.ttf) format('truetype');
 }
 body
 {
-	background-color: var(--azul);
+    margin: 0;
+    padding: 0;
+    font-family:'Courgette-Regular';
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
+header{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    transition: ease;
+    font-size: 50px;
+    background: linear-gradient(to right, #005aa7, #fffde4); 
+    color: transparent;
+    -webkit-background-clip: text;
+}
+nav{
+    width: 700px;
+    height: 100px;
+}
+li{
+    display: flex;
+    padding: 10px;
+    width: 90px;
+    height: 30px;
+    background: linear-gradient(to right, #000000, #434343);
+    border-radius: 30px;
+    font-size: 15px;
+    list-style: none;
+    float: left;
+    margin: 10px 15px;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.fuente:hover{
+    transition-duration: 5s;
+    font-family: sans-serif;
+    
+}
+.media:hover{
+    align-self: center;
+    transition-duration: 2s;
+    font-size: 10px;
+}
+.animacion:hover{
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(20deg); 
+    }
+    10%{
+        transform: rotate(-20deg); 
+    }
+    20%{
+        transform: rotate(20deg); 
+    }
+    30%{
+        transform: rotate(-20deg); 
+    }
+    40%{
+        transform: rotate(20deg); 
+    }
+    50%{
+        transform: rotate(0deg); 
+    }
+    60%{
+        transform: rotate(20deg); 
+    }
+    70%{
+        transform: rotate(-20deg); 
+    }
+    80%{
+        transform: rotate(20deg); 
+    }
+    90%{
+        transform: rotate(-20deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+}
+.inicio
+{
+    color: white;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-color: royalblue;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+    background-image: url('../img/diseno-web-1024x576-compressor.jpg');
+    animation: banner 28s infinite alternate;
+}
+@keyframes banner{
+    0%{
+        background-image: url('../img/diseno-web-1024x576-compressor.jpg');
+    }
+    25%{
+        background-image: url('../img/diseno-web-1024x576-compressor.jpg');
+    }
+    26%{
+        background-image: url('../img/diseno-web-para-empresas-mexico-compressor.jpg');
+    }
+    50%{
+        background-image: url('../img/diseno-web-para-empresas-mexico-compressor.jpg');
+    }
+    51%{
+        background-image: url('../img/diseno-y-desarrollo-web-senati-1800-x-1190-compressor.jpg');
+    }
+    75%{
+        background-image: url('../img/diseno-y-desarrollo-web-senati-1800-x-1190-compressor.jpg');
+    }
+    76%{
+        background-image: url('../img/628-crear-paginas-web-compressor.jpg');
+    }
+    100%{
+        background-image: url('../img/628-crear-paginas-web-compressor.jpg');
+    }
+}
+.inicio h2{
+    font-size: 90px;
+    margin-right: 6px;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.inicio img{
+    height: 400px;
+    filter: brightness(.8);
+}
+.inicio-contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+}
+.cards
+{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: linear-gradient(to right, #485563, #29323c);
+    border: 5px solid white;
+    height: 250px;
+    width: 20%;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card img{
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*
 table
 {
-	position: sticky;/* equivalente a position fixed*/
-}
+	position: sticky;/* equivalente a position fixed
+}*/
+/*:root
+{
+	--azul:green;
+background-color: var(--azul);
+}*/

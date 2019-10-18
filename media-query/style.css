@@ -1,0 +1,40 @@
+/*
+h1{
+    font-size: 80px;
+    color:red;
+}
+
+p{
+    font-size: 30px;
+    background-color: yellow;
+    color:orange;
+}
+
+@media (max-width: 1024px)
+{
+    h1
+    {
+
+    }
+}
+@media (max-width: 768px)
+{
+
+}*/
+/*Mobile first*/
+
+h1{
+    font-size: 40px;
+    color:red;
+}
+p{
+    background-color: black;
+    color:white;
+}
+@media (min-width:1024px)
+{
+    h1
+    {
+        font-size: 30px;
+    }
+}
